@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+	<meta charset="utf-8" /> 
+    <title>Zapatos a tu estilo.com</title><!-- aqui pondremos el contenido html --> 
+<link rel="stylesheet" href="../menudesplegable.html"
+
+type="text/css" />
+   
+</head>
+
+<body>
+      
+        <table height="50%" width="100%" bgcolor="#ffffff" background="../images/banner/banner03.jpg">  
+         <tr> 
+            <td><br><br><br><br><br></td>
+            <td><h1><br><br><font color="red"> <left>Tus <strong>Zapatos</strong> Tu <strong>Estilo</strong></left></font></h1></td>
+        
+         </tr>
+          
+        </table>
+          
+        </table>  
+          <hr/>
+           
+
+	    <div id='cssmenu'>
+          <ul>
+            
+             <li class='active '><a href='../proyecto.html'><span>Inicio</span></a></li>
+             <li><a href='../galeria/galeria.html'><span>Cat&aacute;logo de Promoci&oacute;n</span></a>
+             </li>
+             <li><a href='#'><span>Contactanos</span></a></li>
+             
+          </ul> 
+       </div>
+       
+       
+       <hr/><br><br>
+       
+        <table height="50%" width="50%" border="0 " align="center"  bgcolor="#ffffff">  
+         <tr> 
+			<td>
+			<fieldset>
+				<legend align="center"><i> <b>Contacta con Zapatos-a-tu-Estilo.com</b></i></legend>
+				
+					<label for="destination">Para:</label>
+					<select id="destination" class="required inputext" name="subject"/>
+						<option></option>
+						<option>Zapatos a tu Estilo.com</option>
+					</select><br>
+					
+					<label for="user_name">Tu nombre:</label>
+					<input type="text" class="required inputext" id="user_name" name="user[name]"/><br>
+						
+					<label for="user_subject">Tema:</label>
+					<select id="user_subject" class="required inputext" name="subject"/>
+						<option class="destination_missing"></option>
+						<option class="both_destinations">Felicitar</option>
+						<option class="both_destinations">Sugerir</option>
+						<option class="both_destinations">Reclamar</option>
+						<option class="both_destinations">Consultar</option>
+						<option class="both_destinations">Otro</option>
+					</select><br>
+					<label for="user_email">Tu email:</label>
+					<input type="text" id="user_email" class="required email inputext" name="user[email]"/><br>
+					<label for="message">Comentario:</label>
+					<textarea id="message" class="required inputext" name="message" rows="8" cols="42"></textarea><br>
+						<button type="submit" name="boton" align="center">
+            				 Enviar
+            			</button>
+			</fieldset>
+			</td>
+         </tr>
+         
+          
+
+        </table> 
+        
+
+
+
+</body>
+
+</html>
