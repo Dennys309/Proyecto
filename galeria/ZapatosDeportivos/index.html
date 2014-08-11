@@ -3,13 +3,13 @@
 <head> 
 	<meta charset="utf-8" /> 
     <title>Zapatos a tu estilo.com</title><!-- aqui pondremos el contenido html --> 
-<link rel="stylesheet" href="../../menudesplegable.html"
-
-type="text/css" />
-    
+     <link rel="stylesheet" href="../../css/menudesplegable.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/estiloTablas.css" type="text/css" />
 </head>
 
 <body> <a id='imagen'></a>
+		<body background="../../images/fondo1.jpg">
+		 <div class='centerTable'>
        <table height="50%" width="100%" bgcolor="#ffffff" background="../../images/banner/banner03.jpg">  
          <tr> 
             <td><br><br><br><br><br></td>
@@ -25,8 +25,8 @@ type="text/css" />
 
 	    <div id='cssmenu'>
           <ul>
-          <li class='active '><a href='../../proyecto.html'><span>Inicio</span></a></li>
-		  <li class='active '><a href='../galeria.html'><span>Galerìa</span></a></li>
+          <li class='active '><a href='../../index.html'><span>Inicio</span></a></li>
+		  <li class='active '><a href='../index.html'><span>Galerìa</span></a></li>
             
             
              
@@ -38,14 +38,16 @@ type="text/css" />
         
         <div align="center">
           <p><h3>Para nuestros clientes de <strong>Zapato</strong>_a_tu_<strong>Estilo</strong>.com </p>
-          <p>presentamos nuestros modelos de <strong>zapatos</strong> en oferta.</p>
-        <table height="50%" width="50%" border="0" align="center"  bgcolor="#ffffff" cellpadding="5">  
+          <p>xxx nuestros modelos de <strong>zapatos</strong> en oferta.</p></div>
+         
+         
+         <table class="table">  
          <tr> 
-            <td rowspan="" align="center" width="50%" height="50%">
+            <td  class="td">
                 <fieldset>
                     <legend align="center"><i> <b>Oferta $55.00</b></i></legend>
             		   	<img src="../../images/images15.jpg" width="130 px" height="130 px"><br>
-            			    <button type="submit" name="boton" align="right">
+            			    <button type="submit" name="boton" align="center">
             				 <img src="../../images/icono-compra.jpg" width="60 px" height="60 px">
             			 </button><br>
         		      <p><h4><a href='#ir'>Ver Imagen</a></h4></p>
@@ -54,11 +56,11 @@ type="text/css" />
        
         		      
            
-            <td align="center" wight="50%" height="50%">
+            <td class="td">
                <fieldset wight="50%" height=>
                 	 <legend align="center"><i> <b>Oferta $49.99</b></i></legend>
                   <img src="../../images/images7.jpg" width="130 px" height="130 px">  <br>
-                  <button type="submit" name="boton" align="right">
+                  <button type="submit" name="boton" align="center">
             				 <img src="../../images/icono-compra.jpg" width="60 px" height="60 px">
             			 </button><br> 
           		   <p><h4>Ver Imagen</h4></p> 
@@ -67,7 +69,7 @@ type="text/css" />
          </tr>
          <tr>
          
-             <td align="center" wight="50%" height="50%">
+             <td class="td">
                <fieldset wight="50%" height=>
                 	 <legend align="center"><i> <b>Oferta $40.99</b></i></legend>
                   <img src="../../images/images9.jpg" width="130 px" height="130 px">  <br>
@@ -79,7 +81,7 @@ type="text/css" />
           	</td>
          
          
-          <td align="center" wight="50%" height="50%">
+          <td class="td">
                <fieldset wight="50%" height=>
                 	 <legend align="center"><i> <b>Oferta $45</b></i></legend>
                   <img src="../../images/images5.jpg" width="130 px" height="130 px">  <br>
@@ -118,6 +120,7 @@ type="text/css" />
           
 
         </table>  
+        </div>
 		</body>
 
 </html>
