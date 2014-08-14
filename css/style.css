@@ -1,13 +1,4 @@
-html {
-    -moz-box-shadow: 0 0 50px rgba(0, 0, 0, 0.3) inset;
-}
 
-body {
-    background: none repeat scroll 0 0 #EDEDEC;
-    font: 25px/30px "Helvetica Neue",Helvetica,sans-serif;
-    margin: -35px 0;
-    padding: 0;
-}
 
 #wrapper {
     -moz-border-radius: 20px;
@@ -18,8 +9,10 @@ body {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
     background: #FFFFFF;
     margin: 5px auto;
+	float:right;
     padding: 20px 40px 300px;
-    width: 400px;
+    width: 531px;
+	height:185px;
 }
 
 h1 {
