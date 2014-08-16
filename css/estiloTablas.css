@@ -1,4 +1,16 @@
 
+h1.color{color:white;
+}
+h6.elegant {
+  border-bottom: #CCCCCC 3px solid;
+  color: red;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 100;
+  letter-spacing: 1em;
+  line-height: .8em;
+}
+
 .table{
  background-image:url('../images/banner/banner03.jpg');
  height:320px; 
@@ -20,7 +32,7 @@
     float:left;
     background-color:;
     height:250px;
-    
+    text-align:center;
     -moz-border-radius: 20px;
 -webkit-border-radius: 20px;
 border-radius: 20px;
@@ -59,17 +71,63 @@ padding:0px;
 #navegacion{
 width:980px;
 margin:0 auto 0 auto;
+
 }
 
-#piePagina{
-clear:both;
-width:100%;
-height:200px;
-background-color:#EDEDEC;
-margin:1px auto;
-text-align:;
+/*pie de pagina*/
+    /* Pie de PÃ¡gina */
+
+footer {
+    position:relative;
+    left: 0;
+    width: 100%;
+    background: #681E1E;
+	position:right;
+}
+
+footer div {
+    display: table;
+    margin: 0 auto;
+    padding: 44px 0;
+    width: 940px;
+    color: #777;
+	position:center;
+}
+
+footer div section {
+    display: table-cell;
+    width: 300px;
+	
+}
+
+footer div #Nosotros, footer div #Sugerencias {
+    padding-right: 20px;
 }
     
+footer h3 {
+    color: #FFF;
+	text-align:center;
+}
+
+footer a {
+    color: #999;
+}
+
+footer a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+footer ul {
+    margin: 0 0 0 40px;
+    list-style: square;
+    color: #565656;
+}
+    
+footer ul li a {
+    display: block;
+}
+/*fin de pie de pagina*/
 
     #imagentext{
 text-align:center;
@@ -90,6 +148,38 @@ background:#ffffff;
 
 }
 .img1{width:300px;
- height:200px;
+ height:210px;
 }
+.img2{
+position:right;}
 
+
+/*galeria de imagenes*/
+
+div#ejemploGaleria {
+  background-color: #123;
+  border: 3px solid #234;
+  margin: 0 auto;
+  padding: 10px;
+  width: 480px;
+}
+span#imgDescripcion {
+  color: #ABC;
+  float: left;
+  font-size: 18px;
+  width: 250px;
+}
+ul#imgListaEjemplo{
+  float: right;
+  margin: 0;
+}
+ul#imgListaEjemplo li {
+  display: inline;
+  padding: 0 5px;
+}
+ul#imgListaEjemplo li a {
+  font-size: 16px;
+}
+img#imgContenedor{
+  margin-top: 10px;
+}

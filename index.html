@@ -9,32 +9,48 @@
    <link rel="stylesheet" href="css/mintshare_mini.css" type="text/css" />
 	<link rel="stylesheet" href="css/image-hover-main.css" type="text/css">
 <link rel="stylesheet" href="css/ejemplo1.css" type="text/css">
-
+<link rel="stylesheet" href="css/Bbuscar.css" type="text/css">
+<script type="text/javascript">
+function showPic (whichpic) {
+ if (document.getElementById) {
+  document.getElementById('imgContenedor').src = whichpic.href;
+  if (whichpic.title) {
+   document.getElementById('imgDescripcion').childNodes[0].nodeValue = whichpic.title;
+  } else {
+   document.getElementById('imgDescripcion').childNodes[0].nodeValue = whichpic.childNodes[0].nodeValue;
+  }
+  return false;
+ } else {
+  return true;
+ }
+}
+</script>
 </head>
 
 <body>
 
 
 
-	<!--<div id="container">-->
-		
-        
-        
     <div id="cabecera">
         	
        <table class="table">  
          <tr> 
-            <td><br><br><br><br><br></td>
-            <td><h1><br><br><font color="red"> <left>Tus <strong>Zapatos</strong> Tu <strong>Estilo</strong></left></font></h1></td>
+            <td><br><br><br><br><br><br></td>
+            <td><br/><br/><h6 class="elegant">Tus <strong>Zapatos</strong> Tu <strong>Estilo</strong></h6></td>
         
          </tr>
           
         </table> 
         
     </div>          
-           
+           <br/>
 	<div id="navegacion">
+		<form float="right" id="search-form">
+			<input type="text" />
+			<input type="submit" value="Search" />
+		</form>
 		<hr/>
+		
 			<div id='cssmenu'>
 				<ul>
             
@@ -55,19 +71,17 @@
 	  <div id="image-container">
 	   
 	   		<div class="columnaIzq">
-			<label color="red"><P>PUBLICIDAD</p></label>
+			<h1 class="color">PUBLICIDAD</h1>
 			<div class="vista">  
-                <img src="images/banner/publicidad.jpg"/height="200px" width="300">  
+                <img src="images/banner/publicidad.jpg"/height="210px" width="300">  
                 <div class="mascara">  
-                    <h2>Pagani Huayra</h2>  
-                    <p>Desde el año 2003, Pagani venía trabajando en el 
-desarrollo del proyecto C9, el superdeportivo llamado a sustituir al 
-Pagani Zonda</p>  
-                    <a href="http://citycargoogle.tk/pagani-huayra/" target="_blank" class="informacion">Leer Más</a>  
+                    <h2>Solicita tu Envìo</h2>  
+                    <p></p>  
+                    <a href="" target="_blank" class="informacion">INGRESAR</a>  
                 </div>  
             </div>
-			<img src="images/banner/publicidad2.jpg"/ width="150px" height="150px">  		
-			<img src="images/banner/publicidad2.jpg"/ width="150px" height="150px">
+			<img src="images/toon.gif"/ width="150px" height="150px">  		
+			<img src="images/adidas.png"/ width="150px" height="150px">
 	  </div>
 	    
       
@@ -108,10 +122,19 @@ Pagani Zonda</p>
 						</div>
 					</div>
 					
-					
+					<br/>
 					 <div class="contenidoCen">
 	    				
-	   				
+	   				<div id="ejemploGaleria">
+						<span id="imgDescripcion">Galería de imágenes</span> 
+						<ul id="imgListaEjemplo">
+							<li><a onclick="return showPic(this)" href="images/images.jpg" title="Zapatos Deportivos">1</a></li>
+							<li><a onclick="return showPic(this)" href="images/images2.jpg" title="Calidad y Comodidad">2</a></li>
+							<li><a onclick="return showPic(this)" href="images/images10.jpg" title="Zapato de cuero color cafè ">3</a></li>
+							<li><a onclick="return showPic(this)" href="images/images14.jpg" title="Elegancia">4</a></li>
+						</ul>
+						<img class="img1" id="imgContenedor" src="images/TusZapatos.jpg" />
+					</div>
 	   					
            		    </div>
 					
@@ -123,34 +146,46 @@ Pagani Zonda</p>
 	   <br clear="all" />
 	</div>
 
-		
-	  <div id="piePagina">
-	  
-	  <div float="left" background="red">
-	  Menu
-	  </div>
-	  <div float="right">
-	  hola
-	  </div>
-	  <div>
-	  	<table >
-	  		<tr>
-	  			<td>
-
-	  				<p font="25px/30px" "Helvetica Neue",Helvetica,sans-serif> Copyright 2014 Zapatos a tu Estilo.com 						Todos los derechos Reservados</p>
-	  			</td>
-	  		</tr>
-	  		<tr>
-	  			<td class="td">
-	  				<img src="images/formasPago.png"/>
-	  			</td>
-	  		</tr>
-	  	</table>
-	  </div>  
+	<footer>
+            <div>
+                <section id="Nosotros">
+                    <header>
+                        <h3>Sobre Zapatos a tu Estilo.com</h3>
+                    </header>
+                    <p>Somos una Empresa que pone a tu disposiciòn una variedad de estilos de <strong>zapatos</strong> para hombre y niños </p>
+					<p>Revisa nuestras sugerencias....</p>
+            
+                </section>
+                <section id="Sugerencias">
+                    <header>
+                        <h3>Sugerencias</h3>
+                    </header>
+                    <ul>
+                        <li><a href="https://www.masaltos.com/tallas_zapatos_hombre.php">Encuentra tu talla perfecta</a></li>
+                        <li><a href="#">Formas de Pago</a></li>
+                        <li><a href="#">Gastos e envio</a></li>
+                        <li><a href="#">¡Te devolvemos el dinero!</a></li>
+                    </ul>
+                </section>
+                <section id="popular">
+                    <header>
+                        <h3>Lo m&aacute;s Popular</h3>
+                    </header>
+                    <ul>
+                        <li><a href="#">videos</a></li>
+                        <li><a href="#">Crea tu propio Negocio</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        
+                    </ul>
+                </section>
+            </div>
+			<img class="img2" src="images/formasPago.png"/>
+        </footer>	
+	
 	    
-		</div>
-		</div>
-		</div>
+	</div>
+	</div>
+	
 </body>
 
 </html>

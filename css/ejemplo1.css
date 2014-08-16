@@ -28,8 +28,8 @@
 
 /* Definiomos los estilos generales*/
 .vista {
-    width: 300px;
-    height: 200px;
+    width: 286px;
+    height: 210px;
     margin: 10px;
     float: left;
     border: 10px solid #fff;
@@ -41,7 +41,7 @@
 }
 .vista .mascara, .vista .contenido {
     width: 300px;
-    height: 200px;
+    height: 210px;
     position: absolute;
     overflow: hidden;
     top: 0;
@@ -64,7 +64,7 @@
 .vista p {
     font-family: Georgia, serif;
     font-style: italic;
-    font-size: 12px;
+    font-size: 16px;
     position: relative;
     color: #fff;
     padding: 10px 20px 20px;
