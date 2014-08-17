@@ -1,42 +1,50 @@
 <!DOCTYPE html> 
 <html lang="es"> 
 <head> 
-	<meta charset="utf-8" /> 
-    <title>Zapatos a tu estilo.com</title><!-- aqui pondremos el contenido html --> 
-<link rel="stylesheet" href="../css/menudesplegable.css" type="text/css" />
-<link rel="stylesheet" href="../css/image-hover-main.css" type="text/css">
-
-
+	   	<title>Zapatos a tu estilo.com</title>
+		<link rel="stylesheet" href="../css/menudesplegable.css" type="text/css" />
+		<link rel="stylesheet" href="../css/image-hover-main.css" type="text/css">
+		<link rel="stylesheet" href="../css/Bbuscar.css" type="text/css">
+		<link rel="stylesheet" href="../css/style.css" type="text/css" />
+		<link rel="stylesheet" href="../css/image-hover-main.css" type="text/css">
+		<link rel="stylesheet" href="../css/estiloTablas.css" type="text/css" />
    
 </head>
 
 <body>
       
-        <table height="320px" width="100%" bgcolor="#ffffff" background="../images/banner/banner03.jpg">  
-         <tr> 
-            <td><br><br><br><br><br></td>
-            <td><h1><br><br><font color="red"> <left>Tus <strong>Zapatos</strong> Tu <strong>Estilo</strong></left></font></h1></td>
-        
-         </tr>
+        <div id="cabecera">
+        	
+			<table class="table">  
+				<tr> 
+					<td><br><br><br><br><br><br></td>
+					<td><br/><br/><h6 class="elegant">Tus <strong>Zapatos</strong> Tu <strong>Estilo</strong></h6></td>
+				</tr>
           
-        </table>
-          <hr/>
-           
-
-	    <div id='cssmenu'>
-          <ul>
-            
-             <li class='active '><a href='../index.html'><span>Inicio</span></a></li>
-             <li><a href='../galeria/index.html'><span>Cat&aacute;logo de Promoci&oacute;n</span></a>
-             </li>
-             <li><a href='#'><span>Contactanos</span></a></li>
-             
-          </ul> 
-       </div>
+			</table> 
+        
+		</div>  
+		<br/>
+		<div id="navegacion">
+				<form float="right" id="search-form">
+					<input type="text" />
+					<input type="submit" value="Search" />
+				</form>
+				<hr/>
+		         <div id='cssmenu'>
+					<ul>
+                        <li class='active '><a href='../index.html'><span>Inicio</span></a></li>
+						<li><a href='../galeria/index.html'><span>Cat&aacute;logo de Promoci&oacute;n</span></a>
+						</li>
+						<li><a href='#'><span>Contactanos</span></a></li>
+                    </ul> 
+				</div>
+				<hr/>
+		</div>
        
-       
-       <hr/><br><br>
-       
+       <br/>
+    <div class="container">
+	<div class="contenidoCen">
         <table height="50%" width="50%" border="0 " align="center"  bgcolor="#ffffff">  
          <tr> 
 			<td>
@@ -75,8 +83,43 @@
           
 
         </table> 
-        
-
+		</div><br/>
+        <footer>
+            <div>
+                <section id="Nosotros">
+                    <header>
+                        <h3>Sobre Zapatos a tu Estilo.com</h3>
+                    </header>
+                    <p>Somos una Empresa que pone a tu disposiciòn una variedad de estilos de <strong>zapatos</strong> para hombre y niños </p>
+					<p>Revisa nuestras sugerencias....</p>
+            
+                </section>
+                <section id="Sugerencias">
+                    <header>
+                        <h3>Sugerencias</h3>
+                    </header>
+                    <ul>
+                        <li><a href="https://www.masaltos.com/tallas_zapatos_hombre.php" target="_blank">Encuentra tu talla perfecta</a></li>
+                        <li><a href="#">Formas de Pago</a></li>
+                        <li><a href="#">Gastos e envio</a></li>
+                        <li><a href="#">¡Te devolvemos el dinero!</a></li>
+                    </ul>
+                </section>
+                <section id="popular">
+                    <header>
+                        <h3>Lo m&aacute;s Popular</h3>
+                    </header>
+                    <ul>
+                        <li><a href="#">videos</a></li>
+                        <li><a href="#">Crea tu propio Negocio</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        
+                    </ul>
+                </section>
+            </div>
+			<img class="img2" src="../images/formasPago.png"/>
+        </footer>	
+	</div>
 
 
 </body>
