@@ -16,9 +16,15 @@ h6.elegant {
  height:320px; 
  width:100%;
  text-align:center;
+ cellpadding:5px;
+ }
+.table2{
+ background:#ffffff;
+ height:320px; 
+ width:100%;
+ text-align:justify;
  cellpadding:5;
  }
-
 
 .td{
  text-valign:button;
@@ -48,7 +54,7 @@ padding: 5px 10px 250px;
 
 #contenedorP{
 overflow: hidden;
-border-top-width:3px solid;
+/*border-top-width:3px solid;*/
 border-top-color:#ff0000;
 background: none repeat scroll 0 0 #EDEDEC;
 font: 16px/20px "Helvetica Neue",Helvetica,sans-serif;
@@ -77,54 +83,57 @@ margin:0 auto 0 auto;
 /*pie de pagina*/
     /* Pie de PÃ¡gina */
 
-footer {
+.pieP {
     position:relative;
     left: 0;
     width: 100%;
     background: #681E1E;
 	position:right;
+	
 }
 
-footer div {
+.pieP div {
     display: table;
     margin: 0 auto;
     padding: 44px 0;
     width: 940px;
     color: #777;
 	position:center;
+	
 }
 
-footer div section {
+.pieP div section {
     display: table-cell;
     width: 300px;
 	
 }
 
-footer div #Nosotros, footer div #Sugerencias {
+.pieP div #Nosotros, footer div #Sugerencias {
     padding-right: 20px;
+	
 }
     
-footer h3 {
+.pieP h3 {
     color: #FFF;
 	text-align:center;
 }
 
-footer a {
+.pieP a {
     color: #999;
 }
 
-footer a:hover {
+.pieP a:hover {
     color: #FFF;
     text-decoration: none;
 }
 
-footer ul {
+.pieP ul {
     margin: 0 0 0 40px;
     list-style: square;
     color: #565656;
 }
     
-footer ul li a {
+.pieP ul li a {
     display: block;
 }
 /*fin de pie de pagina*/
