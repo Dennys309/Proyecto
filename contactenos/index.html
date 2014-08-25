@@ -1,64 +1,67 @@
 <!DOCTYPE html>
 <html lang="es"> 
 <head> 
+		<meta charset="utf-8" />
 		<title>Zapatos a tu estilo.com</title>
-		<link rel="stylesheet" href="../css/menudesplegable.css" type="text/css"/>
-		<link rel="stylesheet" href="../css/image-hover-main.css" type="text/css">
-		<link rel="stylesheet" href="../css/Bbuscar.css" type="text/css">
-		<link rel="stylesheet" href="../css/style.css" type="text/css"/>
-		<link rel="stylesheet" href="../css/image-hover-main.css" type="text/css">
-		<link rel="stylesheet" href="../css/estiloTablas.css" type="text/css"/>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<!--css -->
+	<link href="../css/ejemploRS.css" rel="stylesheet" type="text/css">
+		
 </head>
 
 <body>
-      
-        <div id="cabecera">
-        	
-			<table class="table">  
-				<tr> 
-					<td><br><br><br><br><br><br></td>
-					<td><br/><br/><h6 class="elegant">Tus <strong>Zapatos</strong> Tu <strong>Estilo</strong></h6></td>
-				</tr>
-          
-			</table> 
-        
-		</div>  
-		<br/>
-		<div id="navegacion">
-				<form id="search-form">
-					<input type="text" />
-					<input type="submit" value="Search" />
-				</form>
-				<hr/>
-		         <div id='cssmenu'>
-					<ul>
-                        <li class='active '><a href='../index.html'><span>Inicio</span></a></li>
-						<li><a href='../galeria/index.html'><span>Cat&aacute;logo de Promoci&oacute;n</span></a>
-						</li>
-						<li><a href='#'><span>Contactanos</span></a></li>
-                    </ul> 
-				</div>
-				<hr/>
-		</div>
-       
-       <br/>
-    <div class="container">
-	<div class="contenidoCen">
-        <table class="table2">
-         <tr>
-			<td>
-			<fieldset>
-				<legend align="center"><i><b>Contacta con Zapatos-a-tu-Estilo.com</b></i></legend>
-				
-					<label for="destination">Para:</label>
-					<select id="destination" class="required inputext" name="subject" />
-						<option>Zapatos a tu Estilo.com</option>
-					</select><br>
-					
-					<label for="user_name">Tu nombre:</label>
-					<input type="text" class="required inputext" id="user_name" name="user[name]"/><br>
-						
-					<label for="user_subject">Tema:</label>
+      <div id="pagewrap">
+ 
+    <header id="header">
+ 
+        <hgroup>
+            <img src='../images/banner/banner03.jpg' id="logo" alt="logo"  >
+            <h1 id="site-description">Zapatos a tu Estilo.com</h1>
+        </hgroup>
+ 
+        <nav>
+            <ul id="main-nav" class="clearfix">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Contáctenos</a></li>
+ 
+            </ul>
+            <!-- nav -->
+        </nav>
+ 
+        <form id="searchform">
+            <input id="s" placeholder="Search" type="search">
+        </form>
+ 
+    </header>
+    <!-- /#header -->
+    <div id="content">
+	     <h2 class="post-title"><a href="#">Contàcta con Nosotros</a></h2>
+		 <br/><br/><br/>
+		 <p>Escribenos tus sugerencias, opiniones, modelos y tallas de tu calzado preferido<br/>
+		 y te las enviaremos a casa.</p><br/>
+		 <p>Llena los siguientes campos necesarios para que nos pongamos en contacto:</p>
+		 <br/>
+		 <br/>
+		 <br/>
+		 
+		 <div id="stylized" class="myform">
+<form id="form" name="form" method="post" action="index.html">
+<h1>Zapatos a tu Estilo.com</h1>
+<p>Te sugerimos llenar todos los campos.</p>
+
+<label>Nombres</label>
+<input type="text" name="name" id="name" />
+
+<label>Direcciòn</span>
+</label>
+<input type="text" name="name" id="name" />
+
+<label>Para</label>&nbsp;
+<select id="destination" class="required inputext" name="subject" >
+		<option>Zapatos a tu Estilo.com</option>
+</select><br/><br/>
+
+<label for="user_subject">Tema</label>&nbsp;
 					<select id="user_subject" class="required inputext" name="subject"/>
 						<option class="destination_missing"></option>
 						<option class="both_destinations">Felicitar</option>
@@ -66,60 +69,61 @@
 						<option class="both_destinations">Reclamar</option>
 						<option class="both_destinations">Consultar</option>
 						<option class="both_destinations">Otro</option>
-					</select><br>
-					<label for="user_email">Tu email:</label>
-					<input type="text" id="user_email" class="required email inputext" name="user[email]"/><br>
-					<label for="message">Comentario:</label>
-					<textarea id="message" class="required inputext" name="message" rows="8" cols="42"></textarea><br>
-						<button type="submit" name="boton" align="center">
-            				 Enviar
-            			</button>
-			</fieldset>
-			</td>
-         </tr>
-        </table> 
-		</div><br/>
-		</div>
-		<!--<footer>-->
-            <div class="pieP">
-                <section id="Nosotros">
-                    <header>
-                        <h3>Sobre Zapatos a tu Estilo.com</h3>
-                    </header>
-                    <p>Somos una Empresa que pone a tu disposiciòn una variedad de estilos de <strong>zapatos</strong> para hombre y niños </p>
-					<p>Revisa nuestras sugerencias....</p>
-            
-                </section>
-                <section id="Sugerencias">
-					<header>
-                        <h3>Sugerencias</h3>
-					</header>
-                    <ul>
-                        <li><a href="https://www.masaltos.com/tallas_zapatos_hombre.php" target="_blank">Encuentra tu talla perfecta</a></li>
-                        <li><a href="#">Formas de Pago</a></li>
-                        <li><a href="#">Gastos e envio</a></li>
-                        <li><a href="#">¡Te devolvemos el dinero!</a></li>
-                    </ul>
-                </section>
-                <section id="popular">
-                    <header>
-                        <h3>Lo m&aacute;s Popular</h3>
-                    </header>
-                    <ul>
-                        <li><a href="#">videos</a></li>
-                        <li><a href="#">Crea tu propio Negocio</a></li>
-                        <li><a href="#">Preguntas Frecuentes</a></li>
-                        
-                    </ul>
-                </section>
-            
-			<img alt="" class="img2" src="../images/formasPago.png"/>
-        	</div>
-	
-	    
-	<!--</footer>-->
-	
+					</select><br/><br/>
 
+<label>Email</label>
+<input type="text" name="email" id="email" />
+<label>Telefono</span>
+</label>
+<input type="text" name="name" id="name" />
+<label for="message">Comentario</label>
+<textarea id="message" class="required inputext" name="message" rows="8" cols="42"></textarea>
+<br/><br/>
+<button type="submit">Enviar</button>
+<div class="spacer"></div>
+
+</form>
+</div>
+        
+		</div>
+		
+		<aside id="sidebar">
+ 
+        <section class="widget">
+            <h4 class="widgettitulo">Noticias</h4>
+            <ul>
+                <li><a href="#">Nuevas Ofertas</a></li>
+                <li><a href="#">Puntos de Venta</a></li>
+                <li><a href="#">Lista de Produtos</a></li>
+            </ul>
+        </section>
+		<section class="widget">
+            <h4 class="widgettitulo">Publicidad</h4>
+            <ul>
+                <li>
+					<div class="vista">  
+						<img class="img2" alt="" src="../images/banner/banner05.jpg" />
+						<div class="mascara">  
+							<h2>Solicita tu Envìo</h2>
+							<br/><br/>
+                            <a href="" target="_blank" class="informacion">INGRESAR</a>  
+						</div>  
+					</div>
+				</li>
+                
+                <li></li>
+            </ul>
+        </section>
+        
+ 
+    </aside>
+		
+	<footer id="footer">
+ 			<img alt="" src="../images/formasPago.png"/>
+        <p>CopyRight Todos lo Derechos Reservado <br/>Creado por Zapatos a tu Estilo.com</p>
+ 
+    </footer>
+</div>
 
 </body>
 

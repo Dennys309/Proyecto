@@ -1,22 +1,22 @@
-html{
+/*html{
 	height:100%;
 	margin:0;
 	padding:0;
 	width:100%;
 	background-color:#242424;
 	font-family:arial;
-}
-body{
+}*/
+/*body{
 	height:100%;
 	margin:0 auto;
 	padding:0;
 	width:980px;
-}
+}*/
 #logo  {
 	background-color:#242424;
 	color:#F1F1F1;
 	font-size:43px;
-	padding:15px 0 6px;
+	padding:0px 0 6px;
 	text-shadow:0 0 2px #FFFFFF;
 }
 #logo a {
@@ -32,9 +32,10 @@ color: rgb(0, 114, 191); text-decoration: none;
 }
 .heading{
 	font-size:30px;
-	color:#dfdfdf;
+	color:#ffffff;
 	text-align:center;
-	padding-top:20px;
+	padding-top:0px;
+	height:55px;
 }
 .legal{
 	text-align:center;

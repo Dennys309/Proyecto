@@ -1,0 +1,765 @@
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset {
+    margin: 0;
+    padding: 0;
+}
+ 
+img, fieldset {
+    border: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+    margin: 0;
+}
+ 
+/************************************************************************************
+ESTILOS GENERALES
+*************************************************************************************/
+body {
+    background: #0d1424 url(bg.jpg) repeat center top;
+    font: .81em/150% Arial, Helvetica, sans-serif;
+    color: #666;
+}
+a {
+    color: #026acb;
+    text-decoration: none;
+    outline: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+p {
+    margin: 0 0 1.2em;
+    padding: 0;
+	font-size:16px
+}
+ 
+/* list */
+ul, ol {
+    margin: 1em 0 1.4em 24px;
+    padding: 0;
+    line-height: 140%;
+}
+li {
+    margin: 0 0 .5em 0;
+    padding: 0;
+}
+ 
+/* headings */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4em;
+    margin: 20px 0 .4em;
+    color: #000;
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.6em;
+}
+input[type=search] {
+    -webkit-appearance: none;
+    outline: none;
+}
+ 
+#pagewrap {
+    width: 980px;
+    margin: 0 auto;
+}
+#header {
+    position: relative;
+    height: 320px;
+    widht:100%;
+}
+ 
+/* site description */
+#site-description {
+    color: #FFFFFF;
+    left: 282px;
+    position: absolute;
+    top: 30px;
+    text-align:center;
+}
+#searchform {
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+    z-index: 100;
+    width: 160px;
+}
+#searchform #s {
+    width: 140px;
+    float: right;
+    background: #fff;
+    border: none;
+    padding: 6px 10px;
+    /* border radius */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    /* box shadow */
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+    /* transition */
+    -webkit-transition: width .7s;
+    -moz-transition: width .7s;
+    transition: width .7s;
+}
+#main-nav {
+    width: 100%;
+    background: #ccc;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    /* gradient */
+    background: #6a6a6a url(images/nav-bar-bg.png) repeat-x;
+    background: -webkit-gradient(linear, left top, left bottom, from(#b9b9b9), to(#6a6a6a));
+    background: -moz-linear-gradient(top,  #b9b9b9,  #6a6a6a);
+    background: linear-gradient(-90deg, #b9b9b9, #6a6a6a);
+    /* rounded corner */
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    /* box shadow */
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 1px rgba(0,0,0,.4);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 1px rgba(0,0,0,.4);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 1px rgba(0,0,0,.4);
+}
+#main-nav li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+    position: relative;
+}
+#main-nav li:first-child {
+    margin-left: 10px;
+}
+#main-nav a {
+    line-height: 100%;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    padding: 14px 15px;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+}
+#main-nav a:hover {
+    color: #fff;
+    background: #474747;
+    /* gradient */
+    background: -webkit-gradient(linear, left top, left bottom, from(#cdcdcd), to(#797979));
+    background: -moz-linear-gradient(top,  #cdcdcd,  #797979);
+    background: linear-gradient(-90deg, #cdcdcd, #797979);
+ 
+}
+#content {
+    background: #fff;
+    margin: 30px 0 30px;
+    padding: 20px 35px;
+    width: 600px;
+    float: left;
+    /* rounded corner */
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    /* box shadow */
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+    box-shadow: 0 1px 3px rgba(0,0,0,.4);
+}
+h2.post-title {
+    background: #888;
+    border-radius: 5px;
+    padding: 0px 5px ;
+    border-top: 1px solid #889;
+    border-bottom: 1px solid #889;
+    text-align: center;
+}
+h2.post-title a {
+    color: #FFFFFF;
+    font-size: 0.9em;
+    text-shadow: 1px 1px 2px #333333;
+}
+.post {
+    margin-bottom: 20px;
+}
+.post-title {
+    margin: 0 0 5px;
+    padding: 0;
+    font: bold 26px/120% Arial, Helvetica, sans-serif;
+}
+.post-title a {
+    text-decoration: none;
+    color: #000;
+}
+.post-meta {
+    margin: 0 0 10px;
+    font-size: 90%;
+}
+ 
+figure.post-imagen img {
+    float: left;
+    margin: 5px;
+    max-width: 260px;
+}
+#sidebar {
+    width: 280px;
+    float: right;
+    margin: 30px 0 30px;
+}
+.widget {
+    background: #f4e21d;
+    margin: 0 0 30px;
+    padding: 10px 20px;
+    /* rounded corner */
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    /* box shadow */
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+    box-shadow: 0 1px 3px rgba(0,0,0,.4);
+}
+.widgettitulo {
+    background: none repeat scroll 0 0 #666666;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    margin: 0 0 5px;
+    padding: 6px 0;
+    text-align: center;
+}
+.widget ul {
+    margin: 0;
+    padding: 0;
+}
+.widget li {
+    margin: 0;
+    padding: 2px 0;
+    list-style: none;
+    clear: both;
+    border-top: solid 1px #eee;
+}
+section.widget ul li a {
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.2em;
+    padding: 11px;
+    display: block;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease-out;
+}
+section.widget ul li a:hover {
+    background: #fff;
+    color: #6B6B6B !important;
+    text-decoration: none;
+}
+/*---FOOTER---*/
+#footer {
+    background: none repeat scroll 0 0 #999999;
+    border-radius: 5px 5px 5px 5px;
+    clear: both;
+    color: #333333;
+    font-size: 90%;
+	text-align:center;
+    
+}
+#footer a {
+    color: #fff;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0; }
+.clearfix { display: inline-block; }
+.clearfix { display: block; zoom: 1; }
+
+
+/*nuevo*/
+
+
+ h1.elegant {
+  border-bottom: #CCCCCC 3px solid;
+  color: red;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 100;
+  letter-spacing: 1em;
+  line-height: .8em;
+}
+
+.table{
+ /*background-image:url('images/banner/banner03.jpg');*/
+ height:320px; 
+ width:100%;
+ text-align:center;
+ cellpadding:5px;
+ }
+ 
+ .img1{width:300px;
+ height:210px;
+}
+ .img2{width:200px;
+ height:160px;
+}
+/*galeria de imagenes*/
+div#ejemploGaleria {
+  background-color: #123;
+  border: 3px solid #234;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 480px;
+}
+span#imgDescripcion {
+  color: #ABC;
+  float: left;
+  font-size: 18px;
+  width: 250px;
+}
+ul#imgListaEjemplo{
+  float: right;
+  margin: 0;
+}
+ul#imgListaEjemplo li {
+  display: inline;
+  padding: 0 5px;
+}
+ul#imgListaEjemplo li a {
+  font-size: 16px;
+}
+img#imgContenedor{
+  margin-top: 10px;
+}
+
+
+/*puiblicidad*/  
+.vista {
+    width: 200px;
+    height: 160px;
+    margin: 10px;
+    float: left;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+}
+.vista .mascara, .vista .contenido {
+    width: 200px;
+    height: 160px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.vista img {
+    display: block;
+    position: relative;
+}
+.vista h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: hsla(0,0%,0%,0.8);
+    margin: 20px 0 0 0;
+}
+.vista p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 16px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center;
+}
+.vista a.informacion {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+}
+.vista a.informacion:hover {
+    box-shadow: 0 0 5px #000
+}
+/******************************************************************************/
+/* Estilos para ejemplo 1 */
+.vista img {
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.vista .mascara {
+    opacity: 0;
+    background-color: hsla(34,93%,45%,0.7);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.vista h2 {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    transform: translateY(-100px);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.vista p { 
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -o-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.vista a.informacion{
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.vista:hover img { 
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+} 
+.vista:hover .mascara { 
+    opacity: 1;
+}
+.vista:hover h2,
+.vista:hover p,
+.vista:hover a.informacion {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+}
+.vista:hover p {
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    -ms-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+.vista:hover a.informacion {
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    -ms-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+/*fin de publicidad*/
+
+/*galeria de imagen*/
+ ul.thumb {
+    float: left;
+    height: 240px;
+    list-style: none;
+    margin: 0;
+    position: relative;
+    width: 260px;
+  }
+
+  /* cada item es una imagen que fuerzo a que se muestren pequeñas */
+  ul.thumb li {
+    /* se posicionand e manera absoluta */
+    position: absolute;
+    left: 50px;
+    top: 0;
+    z-index: 0;
+    /* algo de decoración */
+    background-color: #FFF;
+    box-shadow: 0 0 10px #444 inset;
+    padding: 10px;
+    /* el tamaño de la imagen a mostrar */
+    height: 112px;
+    width: 150px;
+    /* la transición será el efecto */
+    -moz-transition: all 1s ease-in-out 0s;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+  }
+  ul.thumb li img {
+    height: 100%;
+    width: 100%;
+  }
+
+  /* cada item se posiciona y se rota a gusto */
+  ul.thumb li:nth-child(1) {
+    -moz-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    margin-top: 100px;
+  }
+  ul.thumb li:nth-child(2) {
+    -moz-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    margin-top: 0px;
+  }
+  ul.thumb li:nth-child(3) {
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    margin-top: 75px;
+  }
+  ul.thumb li:nth-child(4) {
+    -moz-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    margin-top: 50px;
+  }
+
+  /* el efecto al poner el cursor encima */
+  ul.thumb li:hover {
+    /* se elimina la rotación */
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    /* se muestra la imagen con su tamaño real */
+    height: 375px;
+    width: 500px;
+    /* se la posiciona y se la pone en primer plano */
+    margin-left: 0px;
+    margin-top: -50px;
+    z-index:10;
+    /* algo de decoración */
+    border-radius: 10px;
+    padding:20px;
+  }
+
+/*fin de galeria*/
+/*formulario*/
+body{
+font-family:”Lucida Grande”, “Lucida Sans Unicode”, Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+}
+/*p, h1, form, button{border:0; margin:0; padding:0;}*/
+.spacer{clear:both; height:1px;}
+/* ———– My Form ———– */
+.myform{
+margin:0 auto;
+width:400px;
+padding:14px;
+}
+
+/* ———– stylized ———– */
+#stylized{
+border:solid 2px #b7ddf2;
+background:#ebf4fb;
+}
+#stylized h1 {
+font-size:14px;
+font-weight:bold;
+margin-bottom:8px;
+}
+#stylized p{
+font-size:11px;
+color:#666666;
+margin-bottom:20px;
+border-bottom:solid 1px #b7ddf2;
+padding-bottom:10px;
+}
+#stylized label{
+display:block;
+font-weight:bold;
+text-align:right;
+width:140px;
+float:left;
+}
+#stylized .small{
+color:#666666;
+display:block;
+font-size:11px;
+font-weight:normal;
+text-align:right;
+width:140px;
+}
+#stylized input{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:200px;
+margin:2px 0 20px 10px;
+}
+#stylized button{
+clear:both;
+margin-left:150px;
+width:125px;
+height:31px;
+background:#666666 url(img/button.png) no-repeat;
+text-align:center;
+line-height:31px;
+color:#FFFFFF;
+font-size:11px;
+font-weight:bold;
+}
+/*fin de formulario*/
+/***************************************************
+----- CONDICIONALES DE MEDIA QUERIES -----
+****************************************************/
+ 
+@media screen and (max-width: 980px) {
+ 
+    #pagewrap {
+        width: 95%;
+    }
+    #content {
+        width: 60%;
+        padding: 3% 4%;
+    }
+    figure.post-imagen img {
+    float: left;
+    margin: 5px;
+    max-width: 230px;
+    }
+    #sidebar {
+        width: 30%;
+    }
+    #sidebar .widget {
+        padding: 8% 7%;
+        margin-bottom: 10px;
+    }
+	div#ejemploGaleria {
+    padding: 10px;
+	max-width: 100%;
+	}
+	ul.thumb {
+    float: left;
+    max-height: 240px;
+    list-style: none;
+    margin: 0;
+    position: relative;
+    max-width: 260px;
+  }
+  .myform{
+  max-width:95%;
+  }
+ 
+}
+ 
+@media screen and (max-width: 650px) {
+ 
+    #header {
+        height: auto;
+    }
+    #searchform {
+        position: absolute;
+        top: 5px;
+        right: 0;
+        z-index: 100;
+        height: 40px;
+    }
+    #searchform #s {
+        width: 70px;
+    }
+    #searchform #s:focus {
+        width: 150px;
+    }
+    #main-nav {
+        position: static;
+    }
+    #site-logo {
+        margin: 15px 100px 5px 0;
+        position: static;
+    }
+ 
+    /* site description */
+    #site-description {
+        margin: 0 0 15px;
+        position: static;
+        text-align: center;
+    }
+    #content {
+        width: auto;
+        float: none;
+        margin: 20px 0;
+    }
+    figure.post-imagen img {
+    float: left;
+    margin: 5px;
+    max-width: 180px;
+    }
+    #sidebar {
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+    #sidebar .widget {
+        padding: 3% 4%;
+        margin: 0 0 10px;
+    }
+	div#ejemploGaleria {
+    padding: 10px;
+	max-width: auto;
+	}
+	ul.thumb {
+    float: none;
+    max-height: auto;
+    list-style: none;
+    margin: 0;
+    max-width: auto;
+  }
+ 
+}
+ 
+@media screen and (max-width: 480px) {
+ 
+    html {
+        -webkit-text-size-adjust: none;
+    }
+    #main-nav a {
+        font-size: 90%;
+        padding: 10px 8px;
+    }
+    figure.post-imagen img {
+    float: left;
+    margin: 5px;
+    max-width: 130px;
+    }
+ 
+}
