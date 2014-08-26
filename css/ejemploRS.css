@@ -76,8 +76,7 @@ input[type=search] {
 #header {
     position: relative;
     height: 320px;
-    widht:100%;
-}
+   }
 #imagenP{
 position:relative;
 height:320px;
@@ -292,7 +291,7 @@ section.widget ul li a:hover {
     clear: both;
     height: 0; }
 .clearfix { display: inline-block; }
-.clearfix { display: block; zoom: 1; }
+.clearfix { display: block; }
 
 
 /*nuevo*/
@@ -543,7 +542,7 @@ section.widget ul li a:hover {
 /*fin de galeria*/
 /*formulario*/
 body{
-font-family:”Lucida Grande”, “Lucida Sans Unicode”, Verdana, Arial, Helvetica, sans-serif;
+font-family:Verdana, Arial, Helvetica, sans-serif;
 font-size:12px;
 }
 /*p, h1, form, button{border:0; margin:0; padding:0;}*/
