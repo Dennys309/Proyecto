@@ -14,7 +14,7 @@ img {
     height: auto;
     width: auto\9; /* ie8 */
 }
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
     display: block;
     margin: 0;
 }
@@ -77,6 +77,10 @@ input[type=search] {
     position: relative;
     height: 320px;
     widht:100%;
+}
+#imagenP{
+position:relative;
+height:320px;
 }
  
 /* site description */
@@ -659,6 +663,10 @@ font-weight:bold;
     }
     #sidebar {
         width: 30%;
+    }
+	#imagenP {
+        max-width: 100%;
+		height:auto;
     }
     #sidebar .widget {
         padding: 8% 7%;
