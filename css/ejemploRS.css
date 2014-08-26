@@ -677,12 +677,11 @@ font-weight:bold;
 	max-width: 100%;
 	}
 	ul.thumb {
-    float: left;
-    max-height: 240px;
-    list-style: none;
-    margin: 0;
-    position: relative;
-    max-width: 260px;
+    
+    max-height:auto;
+   
+    
+    max-width: 100%;
   }
   .myform{
   max-width:95%;
