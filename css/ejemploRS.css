@@ -322,34 +322,6 @@ section.widget ul li a:hover {
  .img2{width:200px;
  height:160px;
 }
-/*galeria de imagenes*/
-div#ejemploGaleria {
-  background-color: #123;
-  border: 3px solid #234;
-  margin: 0 auto;
-  padding: 10px;
-  max-width: 480px;
-}
-span#imgDescripcion {
-  color: #ABC;
-  float: left;
-  font-size: 18px;
-  width: 250px;
-}
-ul#imgListaEjemplo{
-  float: right;
-  margin: 0;
-}
-ul#imgListaEjemplo li {
-  display: inline;
-  padding: 0 5px;
-}
-ul#imgListaEjemplo li a {
-  font-size: 16px;
-}
-img#imgContenedor{
-  margin-top: 10px;
-}
 
 
 /*puiblicidad*/  
